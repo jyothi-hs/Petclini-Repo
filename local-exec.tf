@@ -31,7 +31,7 @@ data "aws_ami" "myami" {
 
 
 resource "aws_instance" "dev-app" {
-  ami               = "ami-0a91cd140a1fc148a"
+  ami               = "ami-0ebc8f6f580a04647"
   #availability_zone = data.aws_availability_zones.zones_east.names[count.index]
   instance_type     = "t2.micro"
   #count             = 1
@@ -81,6 +81,4 @@ resource "null_resource" "ansible-main" {
 
 
 
-output "frontend_public_ips" {
-  value = aws_instance.dev-app.public_ip
-}
+

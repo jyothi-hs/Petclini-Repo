@@ -1,14 +1,13 @@
-3.23.60.46
+3.129.72.120
 
 
 
-[web]
-
-3.23.60.46
-
+[tomcat]
+3.129.72.120
 
 
-[web:vars]
+
+[tomcat:vars]
 
 ansible_ssh_private_key_file=./keyPair.pem 
 
